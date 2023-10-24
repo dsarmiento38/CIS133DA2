@@ -1,0 +1,25 @@
+header {
+    background-color: blue;
+}
+
+div {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#MN {
+    background-color: purple;
+    color: gold;
+    float: left;
+    width: 50%;
+}
+
+#SF {
+    background-color: rgb(185, 8, 62);
+    color: rgb(198, 169, 118);
+    float: right;
+    width: 50%;
+    }
+    footer {
+        clear: both;
+    }
