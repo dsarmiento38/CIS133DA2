@@ -98,3 +98,18 @@ h3 {
 #wrapper { 
     background-color: #FFFFFF;
 }
+
+@media screen and (min-width: 600px){
+    ul{
+        list-style-type: none;
+        display:inline;
+        display:flex;
+        flex-wrap: nowrap;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+}
+    
