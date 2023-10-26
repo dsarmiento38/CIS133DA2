@@ -2,6 +2,10 @@ body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 15%; auto;
+    grid-template-rows: 75px auto 50px;;
+    grid-template-areas: "hdr hdr" "aside main" "ftr ftr";
 }
 
 header, aside, main, footer {
