@@ -2,26 +2,48 @@ body {
     background-color: #1e1e1e1e;
 }
 
+a {
+    cursor: pointer;
+}
+
 .header-main {
-    width: 100%;
+    width: 100px;
     height: 60px;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-main-logo {
-width: fit-content;
-height: 100%;
-background-color: yellow;
-}
+    width: fit-content;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+ }
 
 .header-main-nav {
     width: 120px;
-height: 100%;
-background-color: blue;
+    height: 100%;
+    background-color: orange;
+}
+
+
+.header-main-nav ul {
+    list-style: none;
+}
+
+.header-main-nav ul li {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+
+.header-main-nav ul li a {
+    
 }
 
 .header-main-sm {
     width: 120px;
-height: 100%;
-background-color: red;
+    height: 100%;
+    background-color: red;
 }
