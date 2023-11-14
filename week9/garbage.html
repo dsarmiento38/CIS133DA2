@@ -4,34 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tables Tutoring </title>
+    <style>
+        .number {
+            text-align: right;
+        }
+        .monthname {
+            vertical-align: top;
+        }
+        tfoot td {
+            text-align: center;
+            font-size: small;
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
-    <tables border="1">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tables>
+    <table>
+        <thead>
+            <tr>
+                <th style="background-color: gray;" colspan="3"> Sales Figures </th>
+            </tr>
+    
+        </thead>
+        <tbody>
+            <tr>
+                <td style="width: 75px" rowspan="2" class="monthname"> July </td>
+                <td style="width:   100px"> Gross Sales </td>
+                <td style="width:   75px" class="number"> 1945</td>
+            </tr>
+            <tr>
+                <td> Net Sales </td>
+                <td class="number"> 1733 </td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="monthname"> August </td>
+                <td> Gross Sales </td>
+                <td class="number"> 2240 </td>
+            </tr>
+            <tr>
+                <td> Net Sales </td>
+                <td class="number"> 2009 </td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="3" style="text-align: center;"> data provided by cirriculum </td>
+            </tfoot>
+    </table>
 </body>
 </html>
