@@ -6,12 +6,27 @@
     <title> Document </title>
 </head>
 <style>
+    table {
+        border-spacing: 0px;
+    }
     thead, tfoot {
         background-color: green;
         color: white;
         font-family:Arial, Helvetica, sans-serif
      }
-     
+     th, td {
+        padding: 10px;
+     }
+     tbody {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+     }
+     .nbr {
+        text-align: right;
+     }
+
+     tbody > tr:nth-child(even) {
+        background-color: lightgreen;
+     }
 </style>
 <body>
     <table border="1">
@@ -20,9 +35,9 @@
                 <th colspan="3">My CIS133 Grades</th>
             </tr>
             <tr>
-                <td>week #</td>
-                <td>Pts Possible</td>
-                <td>Pts Actual</td>
+                <th>week #</th>
+                <th>Pts Possible</th>
+                <th>Pts Actual</th>
             </tr>
         </thead>
 
@@ -74,12 +89,12 @@
 
         <tfoot>
             <tr>
-                <td> Total </td>
-                <td class="nbr"> 450 </td>
-                <td class="nbr"> 391 </td>
+                <th> Total </th>
+                <th class="nbr"> 450 </th>
+                <th class="nbr"> 391 </th>
             </tr>
             <tr>
-                <tdcolspan=3> Letter Grade: B (86%) </td>
+                <th colspan=3> Letter Grade: B (86%) </th>
                 <td></td>
                 <td></td>
 
