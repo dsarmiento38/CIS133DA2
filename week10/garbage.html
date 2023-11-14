@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ford Fields </title>
+    <style>
+       #form2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100px;
+       } 
+    </style>
+</head>
+<body>
+  <form>
+    <table>
+        <tr>
+             <td> First Name> </td>
+            <td><input id="fname" type="text" tabindex="1" placeholder="First name"/></td>
+             <td> Last Name </td>
+            <td><input id="lName" type="text" tabindex="2" placeholder="Last name"/>
+        </tr>
+        <tr>
+            <td> Address </td>
+            <td colspan="3">
+                <input type="text" id="street" placeholder="street Address" style="width: 120px" />
+                <input type="text" id="city" placeholder="city" style="width: 80px" />
+                <input type="text" id="state" placeholder="state" style="width: 25px" />
+                <input type="number" id="ZIP" placeholder="ZIP" style="width: 50px;" />
+            </td>
+        </tr>
+        <tr>
+            <td> Password </td>
+            <td><input id="pwd" type="password" tabindex="4" placeholder="password"/></td>
+            <td> Verify </td>
+            <td><input id="vfy" type="password" tabindex="5" placeholder="verify password"/></td>
+        </tr>
+    </table>
+</form>
+<form id="form2">
+    <input id="fname" type="text" tabindex="1" placeholder="First Name"/>
+    <input id="lName" type="text" tabindex="2" placeholder="Last name"/>
+    <input id="uName" type="text" tabindex="3" placeholder="User name"/>
+    <input id="pwd" type="password" tabindex="4" placeholder="password"/>
+    <input id="vfy" type="password" tabindex="5" placeholder="verify password"/>
+</form> 
+</body>
+</html>
