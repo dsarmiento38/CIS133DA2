@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Hands On week 10 </title>
+    <style>
+        form {
+            /* this is glorious */
+            margin: 0 auto;
+            width: 210px;
+            margin-top: 100px;
+        }
+    </style>  
 </head>
 <body>
+    <form>
+        <table>
+            <tr>
+                <td id="WelcomeMessage" colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input 
+                        name=username 
+                        type="text"  
+                        id="tx_username" 
+                        placeholder="type your name" 
+                        style="width: 200px;" 
+                        autofocus 
+                        tabindex="1"
+                    />
+                </td> 
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input 
+                        name="password" 
+                        type="password"  
+                        id="tx_password" 
+                        placeholder="Type your password" 
+                        style="width: 200px;" 
+                        tabindex="2"
+                        maxlength="32"
+                        required
+                    />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input 
+                        name="resetButton" 
+                        type="reset" 
+                        value="Reset" 
+                        style="width: 100px;" 
+                        tabindex="3"
+                        maxlength="24"
+                        required
+                    />
+                </td>
+                <td>
+                    <input 
+                        Name="bbtn_Submit"  
+                        id="bttn_Submit" 
+                        type="submit" 
+                        value="Submit" 
+                        style="width: 100px;" 
+                        tabindex="4"
+                        onclick="writemessage()"
+                    />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <!-- <form> 
+        <input name="rButton" type="radio" id=rButton_1 /> Option 1<br/>
+        <input name="rButton" type="radio" id=rButton_2 /> Option 2<br/>
+        <input name="rButton" type="radio" id=rButton_3 /> Option 3<br/>
+    </form> -->
     
 </body>
+<script>
+    function writemessage() {
+        let userName = document.getElementById("txt_username").value;
+        document.getElementById("WelcomeMessage").innerText = username;
+    }
+</script>
 </html>

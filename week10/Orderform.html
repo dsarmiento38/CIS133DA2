@@ -7,32 +7,166 @@
 </head>
 <body>
     <form id="shirtOrderForm" action="submit_order.php" method="post" enctype="multipart/form-data">
-        <table border="1">
+        <table style="width: 400px;">
             <tr>
-                <td rowspan="5"><img src="./images/shirt.png" style="height: 150px;" ></td>
+                <td rowspan="5"><img src="./images/shirt.png" 
+                    style="height: 150px;" ></td>
                 <td> Company Logo Shirt </td>
             </tr>
             <tr>
-                <td> Color: <input id="shirt_color" type="color" tabindex="1" /> Quantity: <input id="shirt_quality" type </td>
-            </tr>
-            <tr>
-                <td> Size
-                    <input name="size_bttn" 
+                <td> Color: <input 
+                    id="shirt_color" 
+                    type="color" tabindex="1" /> Quantity: <input 
+                    id="shirt_quantity" type="number"
+                    style="width: 50px;"
+                    tabindex="2" 
+                    />
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td> Size:
+                    <input 
+                    name="size_bttn" 
+                    id="size" type="radio" 
+                    tabindex="3" checked 
+                    /> 
+                    Small 
+                    <input 
+                    name="size_bttn" 
+                    id="size" type="radio" 
+                    tabindex="4" 
+                    /> 
+                    Medium 
+                    <input 
+                    name="size_bttn" 
+                    id="size" 
+                    type="radio" 
+                    tabindex="5" /> 
+                    Large 
+                </td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>
+                    <input 
+                    type="checked" 
+                    id="logo_option" 
+                    tabindex="6" 
+                    /> 
+                    Include Logo
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="files" 
+                    id="logo_files" 
+                    tabindex="7" />
+                </td>
             </tr>
          </table>
 
         <hr />
-<table>
-
+<table style="width: 400px;" border="1">
+    <tr>
+        <td>
+            <input 
+            type="text" 
+            id="first_name" 
+            tabindex="8" 
+            style="width: 200px;"
+            placeholder="first name"
+            />
+        </td>
+        <td colspan="2">          
+            <input 
+            type="text" 
+            id="last_name" 
+            tabindex="9" 
+            style="width: 200px;"
+            placeholder="last name"
+            />
+        </td>
+     </tr>
+     <tr>
+        <td colspan="3">
+            <input 
+            type="text" 
+            id="street_address" 
+            tabindex="10" 
+            style="width: 200px;"
+            placeholder="street address"
+            />
+        </td>
+     </tr>
+     <tr>
+        <td>            
+            <input 
+            type="text" 
+            id="City" 
+            tabindex="11" 
+            style="width: 200px;"
+            placeholder="City"
+            />
+</td>
+        <td>            
+            <input 
+            type="text" 
+            id="State" 
+            tabindex="12" 
+            style="width: 50px;"
+            placeholder="State"
+            maxlength="2"
+            />
+</td>
+        <td colspan="3">           
+            <input 
+            type="text" 
+            id="Zip" 
+            tabindex="13" 
+            style="width: 50px;"
+            placeholder="Zip"
+            />
+</td>
+     </tr>
+     <tr>
+        <td colspan=3>            
+            <input 
+            type="text" 
+            id="Phone Number" 
+            tabindex="13" 
+            style="width: 300px;"
+            placeholder="Phone Number"
+            />
+</td>
+        <td></td>
+        <td></td>
+     </tr>
+     <tr>
+        <td>            <input 
+            type="text" 
+            id="E-mail" 
+            tabindex="13" 
+            style="width: 300px;"
+            placeholder="E-mail"
+            />
+</td>
+        <td></td>
+        <td></td>
+     </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+     </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+     </tr>
+     <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+     </tr>
 </table>
     </form>
 </body>
