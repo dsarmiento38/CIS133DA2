@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="reminder"></div>    
+</body>
+<script>
+    let temperature = getTempfromdevice();
+    var strMessage = "";
+
+    switch(true) {
+        case (temperature > 90):
+            strMessagestrMessage = "wear shorts and a t-shirt";
+            break;
+        case (temperature > 75):
+            strMessage = "wear jeans and a long sleeved shirt";
+                break;
+        case (temperature > 60):
+            strMessage = "wear a hoodie and sweatpants"
+            break;
+        default:
+            strMessage = "stay Inside";
+            break
+    }
+
+    document.getElementById('reminder').innerText= 'The temperature is ${temperature}. ${strMessage}.'; 
+    function getTempfromdevice() {
+        return 65;
+    }
+</html>
